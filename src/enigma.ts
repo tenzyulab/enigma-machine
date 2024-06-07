@@ -46,8 +46,8 @@ export class Enigma {
 
 export class PlugBoard {
     protected base_alphabet: string = ALPHABET
-    protected forward_record: Record<string, string> = {}
-    protected backward_record: Record<string, string> = {}
+    private forward_record: Record<string, string> = {}
+    private backward_record: Record<string, string> = {}
 
     constructor(pair_alphabet: string) {
         for (let i = 0; i < this.base_alphabet.length; i++) {
